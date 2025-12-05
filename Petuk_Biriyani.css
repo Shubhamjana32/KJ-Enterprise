@@ -1,0 +1,276 @@
+
+body {
+    background-image: url('assets/Biriyani_Bg.jpeg');
+    /*background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Optional: Add a fallback background color */
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    /* Choose a better font */
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    /* White background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Rounded Logo */
+.rounded-logo {
+    border-radius: 50%;
+    /* Makes the logo round */
+    width: 100px;
+    /* Adjust size as needed */
+    height: 100px;
+    object-fit: cover;
+    /* Prevents distortion */
+}
+
+header {
+    background-color: #e44d26;
+    /* Red header */
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center the logo and title */
+}
+
+.logo img {
+    margin-right: 1rem;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #fff;
+    /* White title */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    /* White links */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+    /* Light gray on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('assets/biryani_background.jpeg');
+    /* A more relevant background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+    position: relative;
+    /* For the overlay */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay for better readability */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    /* Ensure content is above the overlay */
+    padding: 2rem;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.order-button {
+    background-color: #fff;
+    /* White button */
+    color: #e44d26;
+    /* Red text */
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #ccc;
+    /* Light gray on hover */
+    color: #e44d26;
+}
+
+/* Menu Section */
+.menu {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #e44d26;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Added shadow effect */
+    padding: 1.5rem;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    /* Add transition for smooth animation */
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    /* Scale up on hover */
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #e44d26;
+}
+
+.menu-item .description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.menu-item .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* About Section */
+.about {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #e44d26;
+    color: #fff;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #e44d26;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the fade-in animation to the hero content */
+.hero-content {
+    animation: fadeIn 1s ease-in-out;
+}
+
